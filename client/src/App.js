@@ -3,7 +3,7 @@ import './App.css';
 import {useState, useEffect} from 'react';
 
 function url(path){
-  return process.env.NODE_ENV = "development" ? `http://locahost1234${path}` : path
+  return process.env.NODE_ENV === "development" ? `http://locahost1234${path}` : path
 }
 
 //If we're on 'development' that means we're on MY computer, so the path will be my local url for development, otherwise if the path  that is passed in is 
